@@ -20,7 +20,7 @@ public class SwingClient extends Client implements ActionListener
 	public static void main(String[] args)
 	{
 		new SwingClient().frame.setVisible(true);
-		System.out.println("Hello world");
+		//System.out.println("Hello world");
 	}
 
 	protected JFrame frame;
