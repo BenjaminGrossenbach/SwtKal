@@ -20,6 +20,7 @@ public class SwingClient extends Client implements ActionListener
 	public static void main(String[] args)
 	{
 		new SwingClient().frame.setVisible(true);
+		System.out.println("Hello world");
 	}
 
 	protected JFrame frame;
@@ -98,9 +99,9 @@ public class SwingClient extends Client implements ActionListener
 			iToDo.addActionListener(this);
 			mEintraege.add(iToDo);
 	
-			JMenuItem iClear = new JMenuItem("Datensäuberung");
+			JMenuItem iClear = new JMenuItem("Datensï¿½uberung");
 			iClear.setMnemonic('S');
-			iClear.setActionCommand("Löschen");
+			iClear.setActionCommand("Lï¿½schen");
 			iClear.setEnabled(false);
 			iClear.addActionListener(this);
 			mEintraege.add(iClear);
@@ -140,7 +141,7 @@ public class SwingClient extends Client implements ActionListener
 		mVerwalten.setMnemonic('V');
 		mbar.add(mVerwalten);
 
-			JMenuItem iPerson = new JMenuItem("Persönliche Daten");
+			JMenuItem iPerson = new JMenuItem("Persï¿½nliche Daten");
 			iPerson.setMnemonic('P');
 			iPerson.setActionCommand("User");
 			iPerson.setEnabled(false);
@@ -248,7 +249,7 @@ public class SwingClient extends Client implements ActionListener
 //			else if (c.equals("ToDo"))
 //			{
 //			}
-//			else if (c.equals("Löschen"))
+//			else if (c.equals("Lï¿½schen"))
 //			{
 //			}
 			else if (c.equals("Tag"))
